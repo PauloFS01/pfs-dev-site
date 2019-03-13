@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Contact from './views/Contact.vue'
+import Writing from './views/Writing.vue'
+import Portfolio from './views/Portfolio.vue'
 
 Vue.use(Router)
 
@@ -13,6 +16,21 @@ export default new Router({
       name: 'home',
       component: Home
     },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact
+    },
+    {
+      path: '/writing',
+      name: 'writing',
+      component: Writing
+    },
+    {
+      path: '/portfoio',
+      name: 'portfolio',
+      component: Portfolio
+    },       
     {
       path: '/about',
       name: 'about',
