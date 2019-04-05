@@ -2,7 +2,9 @@
   <v-app>
     <v-content>
     <custom-header></custom-header>
-    <router-view/>
+     <v-fade-transition mode="out-in">
+       <router-view/>
+     </v-fade-transition>    
     </v-content>
   </v-app>
 </template>
