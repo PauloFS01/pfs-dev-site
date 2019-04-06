@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar flat app class="grey--text">
+  <v-toolbar flat app class="white">
     <v-icon large>facet</v-icon>
     <v-toolbar-title>
        <router-link class="home-link" to="/">

@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 import user from './store-modules/user.js'
 import utils from './store-modules/utils.js'
 import portfolio from './store-modules/portifolio'
+import writing from './store-modules/writing'
 Vue.use(Vuex)
 
 export default function (/* { ssrContext } */) {
@@ -10,7 +11,8 @@ export default function (/* { ssrContext } */) {
     modules: {
       user,
       utils,
-      portfolio
+      portfolio,
+      writing
     }
   })
 

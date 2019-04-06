@@ -3,9 +3,7 @@
         <v-layout row wrap>
             <v-flex xs2 sm2>
                 <v-img 
-                src="https://picsum.photos/510/300?random" 
-                aspect-ratio="1.7"
-                max-width="200"
+                :src='require(`@/assets/images/${work.img}`)'
                 ></v-img>
             </v-flex>        
             <v-flex xs8 sm10 class="pa-3 mb-2">
@@ -17,13 +15,17 @@
     </div>
 </template>
 <script>
-import { mapState } from 'vuex'
 export default {
-    computed: {
-        ...mapState({
-            work: state => state.portfolio.work
-        })
-    }  
+    props: {
+        work: {
+            type: Object
+        }
+    },
+    data () {
+        return {
+            image: 'cryptoeasy2.jpg'
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>

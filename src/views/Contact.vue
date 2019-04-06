@@ -2,7 +2,7 @@
   <v-container grid-list-md text-xs-center>
     <v-layout row wrap>     
       <v-flex xs12>
-      <p class="teal darken-1 white--text text-md-center">
+      <p class="teal darken-1 white--text text-md-center subtitle-position" >
         <span> Professional Contact </span>
       </p>
       <user-profile 
@@ -11,7 +11,6 @@
       :name="personal.name"
       img="https://image.ibb.co/cOrOP8/IMG-em-casa.jpg"/>
       </v-flex>
-      <material-card></material-card>
     </v-layout>
   </v-container>            
 </template>
@@ -30,3 +29,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.subtitle-position {
+  margin-bottom: 50px;
+}
+</style>

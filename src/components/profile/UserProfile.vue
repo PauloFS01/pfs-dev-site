@@ -2,11 +2,11 @@
     <v-flex xs12 sm4 offset-sm4>
         <v-card class="v-card-profile">
             <v-avatar 
-                :tile='false'   
+                :tile='true'   
                 class="mx-auto avatar-position"
                 size="150"
             >
-                <img :src="require('@/assets/myImage.jpeg')"  alt="avatar"/>
+                <img :src="require('@/assets/avatars/dev-logo.png')"  alt="avatar"/>
             </v-avatar>  
             <v-card-text class="text-xs-center">
             <h6 class="category text-gray font-weight-thin mb-3">CEO / CO-FOUNDER</h6>
@@ -40,5 +40,6 @@ export default {
 <style lang="scss" scoped>
 .avatar-position{
     margin-top: -25px;
+    border: solid black 1px;
 }
 </style>

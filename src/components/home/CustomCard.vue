@@ -1,15 +1,15 @@
 <template>
     <div>
         <v-flex xs12>
-            <v-card color="grey lighten-3" class="Black--text">
+            <v-card color="white" class="Black--text">
                 <v-layout>
                     <v-flex xs12 sm4>
                         <v-img class="hidden-sm-and-down"
-                        :src= personalData.img
+                        :src="require('@/assets/barzera.jpg')"
                         max-height="400"
                         ></v-img>
                         <v-img  class="hidden-md-and-up"
-                        :src= personalData.img
+                       :src="require('@/assets/barzera.jpg')"
                         max-height="200"
                         ></v-img>                    
                     </v-flex>
@@ -36,6 +36,7 @@
                     <div class="text-xs-center avatar-container">
                         <span class="avatar-group" v-for="(skill, index) in skills" :key="index">
                             <v-avatar 
+                            class="avatar-position"
                             :tile='false'
                             size="46px"
                             color="white"
@@ -53,7 +54,7 @@
                 </v-card-actions>
             </v-card>
             <!-- mobile v-action -->
-            <v-card color="grey lighten-3" class="hidden-md-and-up small-cards">
+            <v-card color="white" class="hidden-md-and-up small-cards">
                 <v-layout>
                     <v-card-text class="font-weight-bold">
                         {{ apresentation.text }}
@@ -119,5 +120,7 @@ export default {
 .small-cards {
     margin-top: 0.5rem;
 }
-
+.avatar-position{
+    margin-bottom: -35px;    
+}
 </style>
